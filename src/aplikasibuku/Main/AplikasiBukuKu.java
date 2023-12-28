@@ -74,13 +74,11 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     fiksi.add(new DefaultMutableTreeNode("Memory of Glass"));
     fiksi.add(new DefaultMutableTreeNode("Merantau ke Deli"));
     fiksi.add(new DefaultMutableTreeNode("Miracle on Cherry Hill"));
-    fiksi.add(new DefaultMutableTreeNode("Negeri 5 Menara"));
     fiksi.add(new DefaultMutableTreeNode("Orang Orang Biasa"));
     fiksi.add(new DefaultMutableTreeNode("Origami Hati"));
     fiksi.add(new DefaultMutableTreeNode("Pudarnya Pesona Cleopatra"));
     fiksi.add(new DefaultMutableTreeNode("Rembulan Tenggelam di Wajahmu"));
-    fiksi.add(new DefaultMutableTreeNode("Rindu Yang Baik Untuk Kisah Yang Pelik"));
-    fiksi.add(new DefaultMutableTreeNode("Rumah Tanpa Jendela"));
+    fiksi.add(new DefaultMutableTreeNode("Rindu Yang Baik Untuk Kisah Yang Pelik")); 
     fiksi.add(new DefaultMutableTreeNode("Sang pemimpi"));
     fiksi.add(new DefaultMutableTreeNode("Sebelas patriot"));
     fiksi.add(new DefaultMutableTreeNode("Sebuah Usaha Melupakan"));
@@ -124,7 +122,7 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     asmaNadia.add(new DefaultMutableTreeNode("Assalamualaikum, Beijing!"));
     asmaNadia.add(new DefaultMutableTreeNode("Cinta dalam 99 Nama-Mu"));
     asmaNadia.add(new DefaultMutableTreeNode("Cinta di Ujung Sejadah"));
-    asmaNadia.add(new DefaultMutableTreeNode("Rumah Tanpa Jendela"));
+    
 
     DefaultMutableTreeNode boyCandra = new DefaultMutableTreeNode("Boy Candra");
     boyCandra.add(new DefaultMutableTreeNode("Origami Hati"));
@@ -250,7 +248,6 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     tahun2012.add(new DefaultMutableTreeNode("La poule qui voulait vivre sa vie"));
 
     DefaultMutableTreeNode tahun2011 = new DefaultMutableTreeNode("2011");
-    tahun2011.add(new DefaultMutableTreeNode("Rumah Tanpa Jendela"));
     tahun2011.add(new DefaultMutableTreeNode("Sebelas patriot"));
 
     DefaultMutableTreeNode tahun2010 = new DefaultMutableTreeNode("2010");
@@ -374,7 +371,7 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
 
         jpKiri.setBackground(new java.awt.Color(185, 154, 129));
 
-        iconBukuKu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasibuku/Image/BukuKu-removebg-preview-removebg-preview (1) (1).png"))); // NOI18N
+        iconBukuKu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasibuku/Image/BukuKu.png"))); // NOI18N
 
         labelBukuKu.setFont(new java.awt.Font("Perpetua", 1, 36)); // NOI18N
         labelBukuKu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
