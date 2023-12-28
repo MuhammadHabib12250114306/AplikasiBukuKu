@@ -29,7 +29,6 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
         updateComboBox(kategoriComboBox, menu, "Kategori");
         updateComboBox(pengarangComboBox, menu, "Pengarang");
         updateComboBox(tahunTerbitComboBox, menu, "Tahun Terbit");
-
     }
     
     DefaultTreeModel model;
@@ -39,46 +38,72 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     DefaultMutableTreeNode kategori = new DefaultMutableTreeNode("Kategori");
 
     DefaultMutableTreeNode fiksi = new DefaultMutableTreeNode("Fiksi");
+    fiksi.add(new DefaultMutableTreeNode("Anak Rantau"));
+    fiksi.add(new DefaultMutableTreeNode("Aroma Karsa"));
     fiksi.add(new DefaultMutableTreeNode("Assalamualaikum, Beijing!"));
     fiksi.add(new DefaultMutableTreeNode("Atomic Habits"));
     fiksi.add(new DefaultMutableTreeNode("Ayah"));
     fiksi.add(new DefaultMutableTreeNode("Ayahku bukan pembohong"));
-    fiksi.add(new DefaultMutableTreeNode("Ayat Ayat Cinta"));
+    fiksi.add(new DefaultMutableTreeNode("Ayat-Ayat Cinta"));
     fiksi.add(new DefaultMutableTreeNode("Berani Tidak Disukai"));
+    fiksi.add(new DefaultMutableTreeNode("Berkelana dalam Rimba"));
+    fiksi.add(new DefaultMutableTreeNode("Bidadari Bermata Bening"));
+    fiksi.add(new DefaultMutableTreeNode("Black Showman dan Pembunuhan di Kota Tak Bernama"));
+    fiksi.add(new DefaultMutableTreeNode("Bumi Cinta"));
     fiksi.add(new DefaultMutableTreeNode("Cantik itu Luka"));
     fiksi.add(new DefaultMutableTreeNode("Catherine House"));
+    fiksi.add(new DefaultMutableTreeNode("Cinta dalam 99 Nama-Mu"));
     fiksi.add(new DefaultMutableTreeNode("Cinta di Ujung Sejadah"));
+    fiksi.add(new DefaultMutableTreeNode("Di balik tirai Aroma Karsa"));
     fiksi.add(new DefaultMutableTreeNode("Di Bawah Lindungan Ka'bah"));
     fiksi.add(new DefaultMutableTreeNode("Edensor"));
+    fiksi.add(new DefaultMutableTreeNode("Flora Hen: Uma fábula de amor e esperança")); 
     fiksi.add(new DefaultMutableTreeNode("Girls in The Dark"));
+    fiksi.add(new DefaultMutableTreeNode("Guru Aini"));    
     fiksi.add(new DefaultMutableTreeNode("Hujan"));
     fiksi.add(new DefaultMutableTreeNode("Hyouka"));
     fiksi.add(new DefaultMutableTreeNode("I Went to See My Father"));
     fiksi.add(new DefaultMutableTreeNode("Jade City"));
+    fiksi.add(new DefaultMutableTreeNode("Junji Ito`s Cat Diary Yon and Mu"));
     fiksi.add(new DefaultMutableTreeNode("Kau, Aku dan Sepucuk Angpau Merah"));
+    fiksi.add(new DefaultMutableTreeNode("Keajaiban Toko Kelontong Namiya"));
+    fiksi.add(new DefaultMutableTreeNode("La poule qui voulait vivre sa vie"));
     fiksi.add(new DefaultMutableTreeNode("Laskar Pelangi"));
     fiksi.add(new DefaultMutableTreeNode("Lelaki Harimau"));
     fiksi.add(new DefaultMutableTreeNode("Maryamah Karpov"));
     fiksi.add(new DefaultMutableTreeNode("Memory of Glass"));
     fiksi.add(new DefaultMutableTreeNode("Merantau ke Deli"));
+    fiksi.add(new DefaultMutableTreeNode("Miracle on Cherry Hill"));
     fiksi.add(new DefaultMutableTreeNode("Negeri 5 Menara"));
+    fiksi.add(new DefaultMutableTreeNode("Orang Orang Biasa"));
+    fiksi.add(new DefaultMutableTreeNode("Origami Hati"));
+    fiksi.add(new DefaultMutableTreeNode("Pudarnya Pesona Cleopatra"));
     fiksi.add(new DefaultMutableTreeNode("Rembulan Tenggelam di Wajahmu"));
+    fiksi.add(new DefaultMutableTreeNode("Rindu Yang Baik Untuk Kisah Yang Pelik"));
     fiksi.add(new DefaultMutableTreeNode("Rumah Tanpa Jendela"));
     fiksi.add(new DefaultMutableTreeNode("Sang pemimpi"));
     fiksi.add(new DefaultMutableTreeNode("Sebelas patriot"));
+    fiksi.add(new DefaultMutableTreeNode("Sebuah Usaha Melupakan"));
+    fiksi.add(new DefaultMutableTreeNode("Senja, Hujan dan Cerita Yang Telah Usai"));
+    fiksi.add(new DefaultMutableTreeNode("Sepasang Kekasih yang Belum Bertemu"));
     fiksi.add(new DefaultMutableTreeNode("Seperti Dendam, Rindu Harus Dibayar Tuntas"));
+    fiksi.add(new DefaultMutableTreeNode("Seperti Hujan yang Jatuh ke Bumi"));
     fiksi.add(new DefaultMutableTreeNode("Si Putih"));
+    fiksi.add(new DefaultMutableTreeNode("Tegami"));
     fiksi.add(new DefaultMutableTreeNode("Tenggelamnya Kapal Van Der Wijck"));
     fiksi.add(new DefaultMutableTreeNode("Tentang Kamu"));
+    fiksi.add(new DefaultMutableTreeNode("The Court Dancer"));
+    fiksi.add(new DefaultMutableTreeNode("The Name of the Game is a Kidnapping"));
     fiksi.add(new DefaultMutableTreeNode("These Violent Delights"));
     fiksi.add(new DefaultMutableTreeNode("Trick Mirror"));
-    fiksi.add(new DefaultMutableTreeNode("Anak Rantau"));
-
+    fiksi.add(new DefaultMutableTreeNode("Venus in the Blind Spot"));
+    fiksi.add(new DefaultMutableTreeNode("Violets"));
+    
     DefaultMutableTreeNode nonFiksi = new DefaultMutableTreeNode("Non Fiksi");
-    nonFiksi.add(new DefaultMutableTreeNode("Tafsir Al-Azhar"));
-    nonFiksi.add(new DefaultMutableTreeNode("Kamus Inggris Indonesia"));
-    nonFiksi.add(new DefaultMutableTreeNode("Kamus Indonesia Inggris"));
     nonFiksi.add(new DefaultMutableTreeNode("Ensiklopedia Anak"));
+    nonFiksi.add(new DefaultMutableTreeNode("Kamus Indonesia Inggris"));
+    nonFiksi.add(new DefaultMutableTreeNode("Kamus Inggris Indonesia"));
+    nonFiksi.add(new DefaultMutableTreeNode("Tafsir Al-Azhar"));
 
     kategori.add(fiksi);
     kategori.add(nonFiksi);
@@ -88,17 +113,27 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     DefaultMutableTreeNode andreaHirata = new DefaultMutableTreeNode("Andrea Hirata");
     andreaHirata.add(new DefaultMutableTreeNode("Ayah"));
     andreaHirata.add(new DefaultMutableTreeNode("Edensor"));
+    andreaHirata.add(new DefaultMutableTreeNode("Guru Aini"));    
     andreaHirata.add(new DefaultMutableTreeNode("Laskar Pelangi"));
     andreaHirata.add(new DefaultMutableTreeNode("Maryamah Karpov"));
+    andreaHirata.add(new DefaultMutableTreeNode("Orang Orang Biasa"));    
     andreaHirata.add(new DefaultMutableTreeNode("Sang pemimpi"));
-    andreaHirata.add(new DefaultMutableTreeNode("Sebelas patriot"));
+    andreaHirata.add(new DefaultMutableTreeNode("Sebelas patriot"));   
 
     DefaultMutableTreeNode asmaNadia = new DefaultMutableTreeNode("Asma Nadia");
     asmaNadia.add(new DefaultMutableTreeNode("Assalamualaikum, Beijing!"));
+    asmaNadia.add(new DefaultMutableTreeNode("Cinta dalam 99 Nama-Mu"));
     asmaNadia.add(new DefaultMutableTreeNode("Cinta di Ujung Sejadah"));
     asmaNadia.add(new DefaultMutableTreeNode("Rumah Tanpa Jendela"));
 
     DefaultMutableTreeNode boyCandra = new DefaultMutableTreeNode("Boy Candra");
+    boyCandra.add(new DefaultMutableTreeNode("Origami Hati"));
+    boyCandra.add(new DefaultMutableTreeNode("Rindu Yang Baik Untuk Kisah Yang Pelik"));
+    boyCandra.add(new DefaultMutableTreeNode("Sebuah Usaha Melupakan"));
+    boyCandra.add(new DefaultMutableTreeNode("Senja, Hujan dan Cerita Yang Telah Usai"));
+    boyCandra.add(new DefaultMutableTreeNode("Sepasang Kekasih yang Belum Bertemu"));
+    boyCandra.add(new DefaultMutableTreeNode("Seperti Hujan yang Jatuh ke Bumi"));
+    
     DefaultMutableTreeNode buyaHamka = new DefaultMutableTreeNode("Buya Hamka");
     buyaHamka.add(new DefaultMutableTreeNode("Di Bawah Lindungan Ka'bah"));
     buyaHamka.add(new DefaultMutableTreeNode("Merantau ke Deli"));
@@ -106,18 +141,42 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     buyaHamka.add(new DefaultMutableTreeNode("Tenggelamnya Kapal Van Der Wijck"));
 
     DefaultMutableTreeNode dewiLestari= new DefaultMutableTreeNode("Dewi Lestari");
-    DefaultMutableTreeNode eiichiroOda = new DefaultMutableTreeNode("Eiichiro Oda");
+    dewiLestari.add(new DefaultMutableTreeNode("Aroma Karsa"));
+    dewiLestari.add(new DefaultMutableTreeNode("Di balik tirai Aroma Karsa"));
+    
     DefaultMutableTreeNode ekaKurniawan = new DefaultMutableTreeNode("Eka Kurniawan");
     ekaKurniawan.add(new DefaultMutableTreeNode("Cantik itu Luka"));
     ekaKurniawan.add(new DefaultMutableTreeNode("Lelaki Harimau"));
     ekaKurniawan.add(new DefaultMutableTreeNode("Seperti Dendam, Rindu Harus Dibayar Tuntas"));
-    
+
     DefaultMutableTreeNode habiburrahmanElShirazy = new DefaultMutableTreeNode("Habiburrahman El Shirazy");
+    habiburrahmanElShirazy.add(new DefaultMutableTreeNode("Ayat-Ayat Cinta"));
+    habiburrahmanElShirazy.add(new DefaultMutableTreeNode("Bidadari Bermata Bening"));
+    habiburrahmanElShirazy.add(new DefaultMutableTreeNode("Bumi Cinta"));
+    habiburrahmanElShirazy.add(new DefaultMutableTreeNode("Pudarnya Pesona Cleopatra"));
+
     DefaultMutableTreeNode hwangSunMi = new DefaultMutableTreeNode("Hwang Sun Mi");
+    hwangSunMi.add(new DefaultMutableTreeNode("Flora Hen: Uma fábula de amor e esperança"));   
+    hwangSunMi.add(new DefaultMutableTreeNode("La poule qui voulait vivre sa vie"));
+    hwangSunMi.add(new DefaultMutableTreeNode("Miracle on Cherry Hill"));
+
     DefaultMutableTreeNode junjiIto = new DefaultMutableTreeNode("Junji Ito");
+    junjiIto.add(new DefaultMutableTreeNode("Junji Ito`s Cat Diary Yon and Mu"));
+    junjiIto.add(new DefaultMutableTreeNode("Venus in the Blind Spot"));
+
     DefaultMutableTreeNode keigoHigashino = new DefaultMutableTreeNode("Keigo Higashino");
+    keigoHigashino.add(new DefaultMutableTreeNode("Black Showman dan Pembunuhan di Kota Tak Bernama"));
+    keigoHigashino.add(new DefaultMutableTreeNode("Keajaiban Toko Kelontong Namiya"));
+    keigoHigashino.add(new DefaultMutableTreeNode("Tegami"));
+    keigoHigashino.add(new DefaultMutableTreeNode("The Name of the Game is a Kidnapping"));
+
     DefaultMutableTreeNode kyungSookShin = new DefaultMutableTreeNode("Kyung-Sook Shin");
+    kyungSookShin.add(new DefaultMutableTreeNode("The Court Dancer"));
+    kyungSookShin.add(new DefaultMutableTreeNode("Violets"));
+
     DefaultMutableTreeNode mochtarLubis = new DefaultMutableTreeNode("Mochtar Lubis");
+    mochtarLubis.add(new DefaultMutableTreeNode("Berkelana dalam Rimba"));
+
     DefaultMutableTreeNode tereLiye = new DefaultMutableTreeNode("Tere Liye");
     tereLiye.add(new DefaultMutableTreeNode("Ayahku bukan pembohong"));
     tereLiye.add(new DefaultMutableTreeNode("Hujan"));
@@ -131,7 +190,6 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     pengarang.add(boyCandra);
     pengarang.add(buyaHamka);
     pengarang.add(dewiLestari);
-    pengarang.add(eiichiroOda);
     pengarang.add(ekaKurniawan);   
     pengarang.add(habiburrahmanElShirazy);
     pengarang.add(hwangSunMi);
@@ -148,29 +206,59 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     
     DefaultMutableTreeNode tahun2022 = new DefaultMutableTreeNode("2022");
     tahun2022.add(new DefaultMutableTreeNode("Si Putih"));
-    
+    tahun2022.add(new DefaultMutableTreeNode("Violets"));
+
     DefaultMutableTreeNode tahun2021 = new DefaultMutableTreeNode("2021");
+    tahun2021.add(new DefaultMutableTreeNode("Black Showman dan Pembunuhan di Kota Tak Bernama"));
+    tahun2021.add(new DefaultMutableTreeNode("Rindu Yang Baik Untuk Kisah Yang Pelik"));
+
     DefaultMutableTreeNode tahun2020 = new DefaultMutableTreeNode("2020");
+    tahun2020.add(new DefaultMutableTreeNode("Guru Aini"));
+    tahun2020.add(new DefaultMutableTreeNode("Orang Orang Biasa"));
+    tahun2020.add(new DefaultMutableTreeNode("Venus in the Blind Spot"));
+
     DefaultMutableTreeNode tahun2019 = new DefaultMutableTreeNode("2019");
+    tahun2019.add(new DefaultMutableTreeNode("Di balik tirai Aroma Karsa"));
+    tahun2019.add(new DefaultMutableTreeNode("Miracle on Cherry Hill"));
+
     DefaultMutableTreeNode tahun2018 = new DefaultMutableTreeNode("2018");
+    tahun2018.add(new DefaultMutableTreeNode("Cinta dalam 99 Nama-Mu"));
+    tahun2018.add(new DefaultMutableTreeNode("The Court Dancer"));
+
     DefaultMutableTreeNode tahun2017 = new DefaultMutableTreeNode("2017");
+    tahun2017.add(new DefaultMutableTreeNode("Bidadari Bermata Bening"));
+    tahun2017.add(new DefaultMutableTreeNode("Origami Hati"));
+
     DefaultMutableTreeNode tahun2016 = new DefaultMutableTreeNode("2016"); 
+    tahun2016.add(new DefaultMutableTreeNode("Sebuah Usaha Melupakan"));
+    tahun2016.add(new DefaultMutableTreeNode("Seperti Hujan yang Jatuh ke Bumi"));
+
     DefaultMutableTreeNode tahun2015 = new DefaultMutableTreeNode("2015");
     tahun2015.add(new DefaultMutableTreeNode("Ayah"));
+    tahun2015.add(new DefaultMutableTreeNode("Senja, Hujan dan Cerita Yang Telah Usai"));
+    tahun2015.add(new DefaultMutableTreeNode("Sepasang Kekasih yang Belum Bertemu"));
 
     DefaultMutableTreeNode tahun2014 = new DefaultMutableTreeNode("2014");
+    tahun2014.add(new DefaultMutableTreeNode("Flora Hen: Uma fábula de amor e esperança"));
     tahun2014.add(new DefaultMutableTreeNode("Seperti Dendam, Rindu Harus Dibayar Tuntas"));
 
     DefaultMutableTreeNode tahun2013 = new DefaultMutableTreeNode("2013");
     tahun2013.add(new DefaultMutableTreeNode("Assalamualaikum, Beijing!"));
 
     DefaultMutableTreeNode tahun2012 = new DefaultMutableTreeNode("2012");
+    tahun2012.add(new DefaultMutableTreeNode("Keajaiban Toko Kelontong Namiya"));
+    tahun2012.add(new DefaultMutableTreeNode("La poule qui voulait vivre sa vie"));
+
     DefaultMutableTreeNode tahun2011 = new DefaultMutableTreeNode("2011");
-    tahun2011.add(new DefaultMutableTreeNode("Sebelas patriot"));
     tahun2011.add(new DefaultMutableTreeNode("Rumah Tanpa Jendela"));
+    tahun2011.add(new DefaultMutableTreeNode("Sebelas patriot"));
 
     DefaultMutableTreeNode tahun2010 = new DefaultMutableTreeNode("2010");
+    tahun2010.add(new DefaultMutableTreeNode("Bumi Cinta"));
+
     DefaultMutableTreeNode tahun2009 = new DefaultMutableTreeNode("2009");
+    tahun2009.add(new DefaultMutableTreeNode("Junji Ito`s Cat Diary Yon and Mu"));
+
     DefaultMutableTreeNode tahun2008 = new DefaultMutableTreeNode("2008");
     tahun2008.add(new DefaultMutableTreeNode("Cinta di Ujung Sejadah"));
             
@@ -184,12 +272,17 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     tahun2005.add(new DefaultMutableTreeNode("Laskar Pelangi"));
 
     DefaultMutableTreeNode tahun2004 = new DefaultMutableTreeNode("2004");
+    tahun2004.add(new DefaultMutableTreeNode("Ayat-Ayat Cinta"));
     tahun2004.add(new DefaultMutableTreeNode("Lelaki Harimau"));
+    tahun2004.add(new DefaultMutableTreeNode("Pudarnya Pesona Cleopatra"));
 
     DefaultMutableTreeNode tahun2003 = new DefaultMutableTreeNode("2003");
-    DefaultMutableTreeNode tahun2002 = new DefaultMutableTreeNode("2002");
-    tahun2002.add(new DefaultMutableTreeNode("Cantik itu Luka"));
+    tahun2003.add(new DefaultMutableTreeNode("Tegami"));
 
+    DefaultMutableTreeNode tahun2002 = new DefaultMutableTreeNode("2002");
+    tahun2002.add(new DefaultMutableTreeNode("Berkelana dalam Rimba"));
+    tahun2002.add(new DefaultMutableTreeNode("Cantik itu Luka"));
+    tahun2002.add(new DefaultMutableTreeNode("The Name of the Game is a Kidnapping"));
 
     tahunTerbit.add(tahun2023);
     tahunTerbit.add(tahun2022);
@@ -221,7 +314,7 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
     model = (DefaultTreeModel) jTree.getModel();
     model.setRoot(menu);
     jTree.setModel(model);
-    } 
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -233,7 +326,6 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
 
         panelDasar = new javax.swing.JPanel();
         jpHeader = new javax.swing.JPanel();
-        labelHeader = new javax.swing.JLabel();
         jpKiri = new javax.swing.JPanel();
         iconBukuKu = new javax.swing.JLabel();
         labelBukuKu = new javax.swing.JLabel();
@@ -261,6 +353,7 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
         btnTambahBuku = new javax.swing.JButton();
         btnAboutUs = new javax.swing.JButton();
         btnKeluar = new javax.swing.JButton();
+        labelHeader = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -268,26 +361,20 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
 
         jpHeader.setBackground(new java.awt.Color(185, 154, 129));
 
-        labelHeader.setFont(new java.awt.Font("Perpetua Titling MT", 1, 36)); // NOI18N
-        labelHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelHeader.setText("Sistem Manajemen Buku");
-
         javax.swing.GroupLayout jpHeaderLayout = new javax.swing.GroupLayout(jpHeader);
         jpHeader.setLayout(jpHeaderLayout);
         jpHeaderLayout.setHorizontalGroup(
             jpHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 752, Short.MAX_VALUE)
         );
         jpHeaderLayout.setVerticalGroup(
             jpHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpHeaderLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE))
+            .addGap(0, 60, Short.MAX_VALUE)
         );
 
         jpKiri.setBackground(new java.awt.Color(185, 154, 129));
 
-        iconBukuKu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-books-48.png"))); // NOI18N
+        iconBukuKu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasibuku/Image/BukuKu-removebg-preview-removebg-preview (1) (1).png"))); // NOI18N
 
         labelBukuKu.setFont(new java.awt.Font("Perpetua", 1, 36)); // NOI18N
         labelBukuKu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -298,7 +385,7 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
             }
         });
 
-        jTree.setBackground(new java.awt.Color(247, 229, 217));
+        jTree.setBackground(new java.awt.Color(255, 204, 153));
         jTree.setBorder(null);
         jTree.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
@@ -347,56 +434,6 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
                 btnTambahNodeActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jpKiriLayout = new javax.swing.GroupLayout(jpKiri);
-        jpKiri.setLayout(jpKiriLayout);
-        jpKiriLayout.setHorizontalGroup(
-            jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpKiriLayout.createSequentialGroup()
-                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpKiriLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(labelJudulBuku1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jpKiriLayout.createSequentialGroup()
-                                .addComponent(btnCari, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnTambahNode, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnHapus))
-                            .addGroup(jpKiriLayout.createSequentialGroup()
-                                .addComponent(txtMasukkan)
-                                .addGap(1, 1, 1))))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 31, Short.MAX_VALUE))
-            .addGroup(jpKiriLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(iconBukuKu, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(labelBukuKu)
-                .addGap(25, 25, 25))
-        );
-        jpKiriLayout.setVerticalGroup(
-            jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpKiriLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(iconBukuKu)
-                    .addComponent(labelBukuKu, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelJudulBuku1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtMasukkan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCari)
-                    .addComponent(btnTambahNode)
-                    .addComponent(btnHapus))
-                .addGap(17, 17, 17))
-        );
 
         jTabbedPaneMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTabbedPaneMenu.setFont(new java.awt.Font("Perpetua", 1, 12)); // NOI18N
@@ -518,7 +555,7 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
                 .addGroup(jpTambahBukuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelJudulBuku)
                     .addComponent(txtJudulBuku, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jpTambahBukuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(kategoriComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelKategori))
@@ -553,49 +590,108 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
             }
         });
 
+        labelHeader.setFont(new java.awt.Font("Perpetua Titling MT", 1, 36)); // NOI18N
+        labelHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelHeader.setText("Sistem Manajemen Buku");
+
+        javax.swing.GroupLayout jpKiriLayout = new javax.swing.GroupLayout(jpKiri);
+        jpKiri.setLayout(jpKiriLayout);
+        jpKiriLayout.setHorizontalGroup(
+            jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpKiriLayout.createSequentialGroup()
+                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpKiriLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(labelJudulBuku1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jpKiriLayout.createSequentialGroup()
+                                .addComponent(btnCari, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnTambahNode, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnHapus))
+                            .addGroup(jpKiriLayout.createSequentialGroup()
+                                .addComponent(txtMasukkan)
+                                .addGap(1, 1, 1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnKeluar, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnAboutUs, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpKiriLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTabbedPaneMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 15, Short.MAX_VALUE))
+            .addGroup(jpKiriLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(iconBukuKu, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(labelBukuKu)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(labelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 664, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26))
+        );
+        jpKiriLayout.setVerticalGroup(
+            jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpKiriLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(iconBukuKu)
+                    .addGroup(jpKiriLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labelBukuKu, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTabbedPaneMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelJudulBuku1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtMasukkan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAboutUs))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jpKiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCari)
+                    .addComponent(btnTambahNode)
+                    .addComponent(btnHapus)
+                    .addComponent(btnKeluar)))
+        );
+
         javax.swing.GroupLayout panelDasarLayout = new javax.swing.GroupLayout(panelDasar);
         panelDasar.setLayout(panelDasarLayout);
         panelDasarLayout.setHorizontalGroup(
             panelDasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDasarLayout.createSequentialGroup()
                 .addComponent(jpKiri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panelDasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelDasarLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(panelDasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jpHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTabbedPaneMenu))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDasarLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panelDasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnAboutUs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnKeluar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18))))
+                .addGap(637, 637, 637)
+                .addComponent(jpHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelDasarLayout.setVerticalGroup(
             panelDasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDasarLayout.createSequentialGroup()
-                .addComponent(jpHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPaneMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(btnAboutUs)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnKeluar)
+                .addGroup(panelDasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelDasarLayout.createSequentialGroup()
+                        .addComponent(jpHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jpKiri, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
-            .addComponent(jpKiri, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelDasar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panelDasar, javax.swing.GroupLayout.PREFERRED_SIZE, 1098, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelDasar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelDasar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -798,14 +894,14 @@ public class AplikasiBukuKu extends javax.swing.JFrame {
         String addValue = txtJudulBuku.getText().trim();
         String kategori = (String) kategoriComboBox.getSelectedItem();
         String pengarang = (String) pengarangComboBox.getSelectedItem();
-        String tahunRilis = (String) tahunTerbitComboBox.getSelectedItem();
+        String tahunTerbit = (String) tahunTerbitComboBox.getSelectedItem();
         
         if (addValue.isEmpty() || kategoriComboBox.getSelectedIndex()== 0 || pengarangComboBox.getSelectedIndex()== 0 || tahunTerbitComboBox.getSelectedIndex()== 0) {
             JOptionPane.showMessageDialog(frame, "Selesaikan pengisian terlebih dahulu", "Peringatan", JOptionPane.WARNING_MESSAGE);
         } else {
             addToNode(kategori, addValue);
             addToNode(pengarang, addValue);
-            addToNode(tahunRilis, addValue);
+            addToNode(tahunTerbit, addValue);
             txtJudulBuku.setText("");
             kategoriComboBox.setSelectedIndex(0);
             pengarangComboBox.setSelectedIndex(0);

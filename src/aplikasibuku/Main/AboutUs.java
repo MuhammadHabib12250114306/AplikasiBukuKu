@@ -45,19 +45,19 @@ public class AboutUs extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Pristina", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Muhammad Habib");
 
-        jLabel2.setFont(new java.awt.Font("Pristina", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Made by the group:");
 
-        jLabel3.setFont(new java.awt.Font("Pristina", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Dede Naifa");
 
-        jLabel4.setFont(new java.awt.Font("Pristina", 0, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Najwa Jauhari");
 

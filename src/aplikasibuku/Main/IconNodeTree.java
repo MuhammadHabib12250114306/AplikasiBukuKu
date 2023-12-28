@@ -13,10 +13,10 @@ import javax.swing.tree.DefaultTreeCellRenderer;
  * @author H A B I B
  */
 class IconNodeTree extends DefaultTreeCellRenderer {
-    private Icon root = new ImageIcon(new ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-books-48.png")).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
+    private Icon root = new ImageIcon(new ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-books-64.png")).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
     private Icon menu = new ImageIcon(new ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-books-48.png")).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
     private Icon submenu = new ImageIcon(new ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-book-48.png")).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
-    private Icon buku = new ImageIcon(new ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-book-48.png")).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
+    private Icon buku = new ImageIcon(new ImageIcon(getClass().getResource("/aplikasibuku/Image/icons8-book-32.png")).getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
 
     @Override
     public Component getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
